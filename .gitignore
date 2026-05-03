@@ -1,0 +1,29 @@
+node_modules
+dist
+dist-ssr
+.DS_Store
+*.local
+.vite
+.env
+.env.*
+!.env.example
+
+# Yarn 4 (Corepack-managed, node-modules linker)
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+yarn-error.log
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
