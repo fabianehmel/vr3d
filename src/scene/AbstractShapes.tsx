@@ -105,7 +105,7 @@ export function AbstractShapes() {
 
   useEffect(() => {
     const shared = createSharedGeometries();
-    const arr = buildInstances(params, shared);
+    const arr = buildInstances({ ...params, kind: params.kind as Kind }, shared);
     setInstances(arr);
     return () => {
       for (const g of Object.values(shared)) g.dispose();
